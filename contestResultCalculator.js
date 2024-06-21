@@ -35,7 +35,6 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
       // Check if message is empty
       if (message === '') {
-        console.log('Empty message:', comment);
         return; // Skip processing this comment further
       }
 
@@ -85,11 +84,25 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     talliedVoters[vote].push(comment.username);
   }
 
-  // Output results
-  console.log('Total Comments:', rawComments.length);
-  console.log('Irregular Votes:', irregularVotes.length);
-  console.log('Late Submissions:', lateSubmissions.length);
-  console.log('Number of processed comments:', processedComments.length);
-  console.log('Voting results:', talliedVotes);
-  console.log('Voters:', talliedVoters);
+  // Compile votes into the desired format
+  const compiledVotes = [];
+  const candidates = ['Vinco', 'Poco', 'Victor', 'Manny'];
+
+  Object.keys(talliedVotes).forEach(vote => {
+    compiledVotes.push({
+      label: candidates[parseInt(vote) - 1],
+      value: talliedVotes[vote],
+    });
+  });
+
+  // Write compiled votes to a JSON file
+  const jsonContent = JSON.stringify(compiledVotes, null, 2); // Pretty-print JSON
+
+  fs.writeFile('./votingResults.json', jsonContent, 'utf8', err => {
+    if (err) {
+      console.error('Error writing JSON file:', err);
+      return;
+    }
+    console.log('JSON file has been saved.');
+  });
 });
