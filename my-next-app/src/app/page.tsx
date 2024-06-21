@@ -90,10 +90,18 @@ export default function Home() {
                 <br />
                 <br />
                 This artwork seamlessly blends traditional and digital
-                techniques. Artist &#34;Vinco&#34; invites us into a world of
-                chromatic brilliance with her pink jasmine palette. Meanwhile,
-                Sean Donny adds a bold, modern twist to the impressionistic
-                scene, creating a captivating fusion of styles and perspectives.
+                techniques. Artist &#34;
+                <a
+                  href="https://www.instagram.com/olivinco_/"
+                  target="_blank"
+                  className="underline"
+                >
+                  Vinco
+                </a>
+                &#34; invites us into a world of chromatic brilliance with her
+                pink jasmine palette. Meanwhile, Sean Donny adds a bold, modern
+                twist to the impressionistic scene, creating a captivating
+                fusion of styles and perspectives.
               </p>
             </div>
             <div className="artist-1-artwork-container w-full h-auto lg:w-3/5 p-10">
@@ -122,10 +130,18 @@ export default function Home() {
               <p className="artist-2-description leading-loose text-lg lg:text-xl lg:mt-5">
                 This artwork captures a heartwarming embrace between
                 PinkPantheress, illustrated by Sean Donny, and BKtherula,
-                portrayed by Poco, forever immortalized in this Polaroid still.
-                The two digital artists approach their subjects from personal
-                angles, allowing their unique styles to shine through while
-                complementing each other beautifully in this twin pair.
+                portrayed by{' '}
+                <a
+                  href="https://www.instagram.com/poco_sketches/"
+                  target="_blank"
+                  className="underline"
+                >
+                  Poco
+                </a>
+                , forever immortalized in this Polaroid still. The two digital
+                artists approach their subjects from personal angles, allowing
+                their unique styles to shine through while complementing each
+                other beautifully in this twin pair.
               </p>
             </div>
           </div>
@@ -138,8 +154,15 @@ export default function Home() {
               </h1>
               <br />
               <p className="artist-3-description leading-loose text-lg lg:text-xl lg:mt-5">
-                Victor and Sean approached this piece as if it were a mirror of
-                some sort. As the subjects gaze back at us, it feels almost
+                <a
+                  href="https://www.instagram.com/chimdi.jpg/"
+                  target="_blank"
+                  className="underline"
+                >
+                  Victor
+                </a>{' '}
+                and Sean approached this piece as if it were a mirror of some
+                sort. As the subjects gaze back at us, it feels almost
                 intrusive, giving us a glimpse into their minds and emotions.
                 <br />
                 <br />
@@ -181,10 +204,18 @@ export default function Home() {
               </h1>
               <br />
               <p className="artist-4-description leading-loose text-lg lg:text-xl lg:mt-5">
-                Sean and Manny perform a quadratic digital dance on their
-                canvas. The &#34;Falling or Flying&#34; artist is depicted
-                staring directly at the viewer, confronting her various sides
-                through reflections.
+                Sean and{' '}
+                <a
+                  href="https://www.instagram.com/manex_draws/"
+                  target="_blank"
+                  className="underline"
+                >
+                  Manny
+                </a>{' '}
+                perform a quadratic digital dance on their canvas. The
+                &#34;Falling or Flying&#34; artist is depicted staring directly
+                at the viewer, confronting her various sides through
+                reflections.
                 <br />
                 <br />
                 Her sharp gaze is like a sword, piercing and subduing us,
@@ -253,6 +284,7 @@ export default function Home() {
                 <a
                   href="https://github.com/Sean-donny/May2024IGArtChallenge"
                   className="text-[#7f7aff] underline"
+                  target="_blank"
                 >
                   here
                 </a>
@@ -278,10 +310,14 @@ export default function Home() {
         <div className="footer bg-[#050413] w-full h-12 flex flex-row items-center justify-center lg:justify-end">
           <div className="footer-links flex space-x-8 md:space-x-12 lg:space-x-20 lg:mx-20">
             <p className="text-base font-semibold text-[#7f7aff]">
-              <a href="https://www.instagram.com/sean.donny/">Instagram</a>
+              <a href="https://www.instagram.com/sean.donny/" target="_blank">
+                Instagram
+              </a>
             </p>
             <p className="text-base font-semibold text-[#7f7aff]">
-              <a href="https://www.youtube.com/@SeanDonny333">YouTube</a>
+              <a href="https://www.youtube.com/@SeanDonny333" target="_blank">
+                YouTube
+              </a>
             </p>
             <p className="text-base font-semibold text-[#7f7aff]">
               <a href="mailto:seandonny333@gmail.com">Contact</a>
