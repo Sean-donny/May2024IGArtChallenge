@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fancy-hero-text {
+  transition: 0.35s font-weight, 0.35s color;
+}
+
+.fancy-hero-text:hover {
+  font-weight: 1000;
+}
+
+.fancy-hero-text:hover + .fancy-hero-text {
+  font-weight: 800;
+}
+
+.fancy-hero-text:hover + .fancy-hero-text + .fancy-hero-text {
+  font-weight: 600;
+}
+
+.fancy-hero-text:has(+ .fancy-hero-text:hover) {
+  font-weight: 800;
+}
+
+.fancy-hero-text:has(+ .fancy-hero-text + .fancy-hero-text:hover) {
+  font-weight: 600;
+}
